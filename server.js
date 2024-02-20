@@ -1,8 +1,8 @@
 import http from "http";
 import { v4 as uuidv4 } from "uuid";
-import { successHandler } from "./successHandler.js";
-import { errorHandler } from "./errorHandler.js";
-import { baseHeaders } from "./headers.js";
+import { successHandler } from "./utils/successHandler.js";
+import { errorHandler } from "./utils/errorHandler.js";
+import { baseHeaders } from "./utils/headers.js";
 const todos = [];
 
 const requestListener = (req, res) => {
